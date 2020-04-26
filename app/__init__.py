@@ -48,7 +48,7 @@ def create_app(config):
     assets_env.register('app_js', bundles['app_js'])
 
     # Blueprints
-    from app.views import main
+    from app.main import main
     app.register_blueprint(main)
 
     return app
